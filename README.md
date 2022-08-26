@@ -23,8 +23,9 @@
 
 Test: "It should return 5 when small is put in the function"
 Code:
-if (small === 5)
-function(small)
+if (this.size === "Small") {
+return 5
+}
 Expected Output: 5
 
 ### License
