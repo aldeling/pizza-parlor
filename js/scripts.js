@@ -10,7 +10,7 @@ function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
   this.extras = extras;
 }
 
-Pizza.prototype.initialPrice = function(){
+Pizza.prototype.initialPrice = function() {
   if (this.size === "Small") {
     return "5"
   } else if (this.size === "Medium") {
@@ -23,6 +23,9 @@ Pizza.prototype.initialPrice = function(){
   return "0"
 };
 
+// Pizza.prototype.pizzaMeatPrice = function() {
+
+// }  
 
 // UI Logic
 function handleFormSubmission(event) {
@@ -43,6 +46,8 @@ function handleFormSubmission(event) {
   document.querySelector(".extras").innerText = selectedExtras;
   let myPizza = new Pizza(selectedSize, selectedCrust, selectedCheese, selectedMeat, selectedSauce, selectedGreens, selectedExtras);
   console.log(myPizza.initialPrice())
+  let size = document.getElementById("sizeDisplay").value;
+  initialPrice(size);
 }
 
 window.addEventListener("load", function() {

@@ -50,5 +50,15 @@ else if (this.size === "Extra Large") {
 }
 Expected Output: 20
 
+Describes: pizzaMeatPrice()
+
+Test: "It should return +1 when ham is put in the function"
+Code:
+if (this.meat === "Ham") {
+  initialPrice(small) + 1
+}
+return total
+Expected Output: 6
+
 ### License
   [GNU GPL3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 08/26/2022 Athea DeLing
