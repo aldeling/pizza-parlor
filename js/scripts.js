@@ -1,4 +1,3 @@
-// Business Logic
 
 function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
   this.size = size;
@@ -39,7 +38,7 @@ Pizza.prototype.totalPrice = function() {
   return "$" + this.pizzaMeatPrice() + ".00";
   };
 
-// UI Logic
+
 function handleFormSubmission(event) {
   event.preventDefault();
   let selectedSize = document.getElementById("size").value;
@@ -57,9 +56,6 @@ function handleFormSubmission(event) {
   let selectedExtras = document.getElementById("extras").value;
   document.querySelector(".extras").innerText = selectedExtras;
   let myPizza = new Pizza(selectedSize, selectedCrust, selectedCheese, selectedMeat, selectedSauce, selectedGreens, selectedExtras);
-  console.log(myPizza.initialPrice())
-  console.log(myPizza.pizzaMeatPrice())
-  console.log(myPizza.totalPrice())
   document.querySelector(".price").innerText = myPizza.totalPrice();
   document.getElementById("receipt").removeAttribute("class");
 }

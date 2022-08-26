@@ -14,7 +14,7 @@
 ### Setup Instructions
   There are a couple ways you can choose to set up this web page
   * Clone the repository from the GitHub repository to your local desktop
-  * Open the created [GitHub](will add) pages link to access the web page
+  * Open the created [GitHub](https://aldeling.github.io/pizza-parlor/) pages link to access the web page
 
 ### Known Bugs
   * There are no known bugs
