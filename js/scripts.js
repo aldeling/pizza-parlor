@@ -13,6 +13,8 @@ function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
 Pizza.prototype.initialPrice = function(){
   if (this.size === "Small") {
     return "5"
+  } else if (this.size === "Medium") {
+    return "10"
   }
   return "0"
 };
