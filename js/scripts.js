@@ -60,7 +60,8 @@ function handleFormSubmission(event) {
   console.log(myPizza.initialPrice())
   console.log(myPizza.pizzaMeatPrice())
   console.log(myPizza.totalPrice())
-  document.querySelector(".price").innerText = myPizza.pizzaMeatPrice();
+  document.querySelector(".price").innerText = myPizza.totalPrice();
+  document.getElementById("receipt").removeAttribute("class");
 }
 
 window.addEventListener("load", function() {

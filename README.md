@@ -84,7 +84,7 @@ Describes: totalPrice()
 
 Test: "It should return $5.00 when all drop downs are selected"
 Code:
-{ return $ + this.pizzaMeatPrice + .00;
+{ return "$" + this.pizzaMeatPrice() + ".00";
 };
 Expected Output: $5.00
 
