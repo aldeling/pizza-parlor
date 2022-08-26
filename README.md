@@ -28,9 +28,12 @@ return 5
 }
 Expected Output: 5
 
-Test:
+Test: "It should return 10 when medium is put in the function"
 Code:
-Expected Output:
+else if (this.size === "Medium") {
+  return 10
+}
+Expected Output: 10
 
 ### License
   [GNU GPL3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 08/26/2022 Athea DeLing
