@@ -13,7 +13,7 @@
 
 ### Setup Instructions
   There are a couple ways you can choose to set up this web page
-  * Clone the repository from the GitHub repository to your local desktop
+  * Clone the repository from the GitHub repository to your local desktop. Once you have done the you click on index.html and it should open to your default browser
   * Open the created [GitHub](https://aldeling.github.io/pizza-parlor/) pages link to access the web page
 
 ### Known Bugs
