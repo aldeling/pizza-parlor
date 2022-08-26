@@ -15,6 +15,8 @@ Pizza.prototype.initialPrice = function(){
     return "5"
   } else if (this.size === "Medium") {
     return "10"
+  } else if (this.size === "Large") {
+    return "15"
   }
   return "0"
 };
