@@ -25,7 +25,9 @@ Pizza.prototype.initialPrice = function() {
 
 Pizza.prototype.pizzaMeatPrice = function() {
   if (this.meat === "Ham") {
-    return this.initialPrice() + 1
+    return this.initialPrice() + 1;
+  } else if (this.meat === "Sausage") {
+    return this.initialPrice() + 2;
   }
   return 0
 };  
