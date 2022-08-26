@@ -59,16 +59,19 @@ if (this.meat === "Ham") {
 }
 Expected Output: 6
 
-Test: "It should return 7 when sausage id put in the function"
+Test: "It should return 7 when sausage is put in the function"
 Code:
 else if (this.meat === "Sausage") {
   return initialPrice(small) + 2
 }
 Expected Output: 7
 
-Test:
+Test: "It should return 9 when bacon is put in the function"
 Code:
-Expected Output:
+else if (this.meat === "Bacon") {
+  return initialPrice(small) + 4
+}
+Expected Output: 9
 
 Test:
 Code:
