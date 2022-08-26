@@ -52,12 +52,28 @@ Expected Output: 20
 
 Describes: pizzaMeatPrice()
 
-Test: "It should return +1 when ham is put in the function"
+Test: "It should return 6 when ham is put in the function"
 Code:
 if (this.meat === "Ham") {
   return initialPrice(small) + 1
 }
 Expected Output: 6
+
+Test: "It should return 7 when sausage id put in the function"
+Code:
+else if (this.meat === "Sausage") {
+  return initialPrice(small) + 2
+}
+Expected Output: 7
+
+Test:
+Code:
+Expected Output:
+
+Test:
+Code:
+Expected Output:
+
 
 ### License
   [GNU GPL3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 08/26/2022 Athea DeLing

@@ -50,8 +50,7 @@ function handleFormSubmission(event) {
   let myPizza = new Pizza(selectedSize, selectedCrust, selectedCheese, selectedMeat, selectedSauce, selectedGreens, selectedExtras);
   console.log(myPizza.initialPrice())
   console.log(myPizza.pizzaMeatPrice())
-  // let size = document.getElementById("sizeDisplay").value;
-  // initialPrice(size);
+  document.querySelector(".price").innerText = myPizza.pizzaMeatPrice();
 }
 
 window.addEventListener("load", function() {
