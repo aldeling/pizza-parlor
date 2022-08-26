@@ -80,6 +80,14 @@ else {
 }
 Expected Output: 5
 
+Describes: totalPrice()
+
+Test: "It should return $5.00 when all drop downs are selected"
+Code:
+{ return $ + this.pizzaMeatPrice + .00;
+};
+Expected Output: $5.00
+
 
 ### License
   [GNU GPL3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 08/26/2022 Athea DeLing
