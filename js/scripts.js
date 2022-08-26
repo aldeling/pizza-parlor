@@ -35,6 +35,10 @@ Pizza.prototype.pizzaMeatPrice = function() {
   }
 };  
 
+Pizza.prototype.totalPrice = function() {
+  return "$" + this.pizzaMeatPrice() + ".00";
+  };
+
 // UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
@@ -55,6 +59,7 @@ function handleFormSubmission(event) {
   let myPizza = new Pizza(selectedSize, selectedCrust, selectedCheese, selectedMeat, selectedSauce, selectedGreens, selectedExtras);
   console.log(myPizza.initialPrice())
   console.log(myPizza.pizzaMeatPrice())
+  console.log(myPizza.totalPrice())
   document.querySelector(".price").innerText = myPizza.pizzaMeatPrice();
 }
 
