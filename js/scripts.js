@@ -11,10 +11,18 @@ function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
 }
 
 // UI Logic
-function handleFromSubmission(event) {
+function handleFormSubmission(event) {
   event.preventDefault();
+  const selectedSize = document.getElementById("size").value;
+  document.querySelector(".size").innerText = selectedSize;
+  const selectedCrust = document.getElementById("crust").value;
+  const selectedCheese = document.getElementById("cheese").value;
+  const selectedMeat = document.getElementById("meat").value;
+  const selectedSauce = document.getElementById("sauce").value;
+  const selectedGreens = document.getElementById("greens").value;
+  const selectedExtras = document.getElementById("extras").value;
 }
 
 window.addEventListener("load", function() {
-  this.document.querySelector("form#pizza").addEventListener("submit", handelFormSubmission);
+  document.querySelector("form#pizza").addEventListener("submit", handleFormSubmission);
 });
