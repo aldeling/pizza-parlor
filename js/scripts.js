@@ -14,7 +14,7 @@ function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
 function handleFormSubmission(event) {
   event.preventDefault();
   const selectedSize = document.getElementById("size").value;
-  document.querySelector(".size").innerText = selectedSize;
+  document.querySelector("size").innerText = selectedSize;
   const selectedCrust = document.getElementById("crust").value;
   const selectedCheese = document.getElementById("cheese").value;
   const selectedMeat = document.getElementById("meat").value;
