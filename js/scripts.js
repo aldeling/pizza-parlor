@@ -29,9 +29,10 @@ Pizza.prototype.pizzaMeatPrice = function() {
   } else if (this.meat === "Sausage") {
     return this.initialPrice() + 2;
   } else if (this.meat === "Bacon") {
-    return this.initialPrice() + 4
+    return this.initialPrice() + 4;
+  } else {
+    return this.initialPrice()
   }
-  return 0
 };  
 
 // UI Logic

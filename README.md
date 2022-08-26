@@ -25,28 +25,28 @@ Describes: initialPrice()
 Test: "It should return 5 when small is put in the function"
 Code:
 if (this.size === "Small") {
-return 5
+return 5;
 }
 Expected Output: 5
 
 Test: "It should return 10 when medium is put in the function"
 Code:
 else if (this.size === "Medium") {
-  return 10
+  return 10;
 }
 Expected Output: 10
 
 Test: "It should return 15 when large is put in the function"
 Code:
 else if (this.size === "Large") {
-  return 15
+  return 15;
 }
 Expected Output: 15
 
 Test: "It should return 20 when extra large is put in the function"
 Code:
 else if (this.size === "Extra Large") {
-  return 20
+  return 20;
 }
 Expected Output: 20
 
@@ -55,28 +55,28 @@ Describes: pizzaMeatPrice()
 Test: "It should return 6 when ham is put in the function"
 Code:
 if (this.meat === "Ham") {
-  return initialPrice(small) + 1
+  return initialPrice(small) + 1;
 }
 Expected Output: 6
 
 Test: "It should return 7 when sausage is put in the function"
 Code:
 else if (this.meat === "Sausage") {
-  return initialPrice(small) + 2
+  return initialPrice(small) + 2;
 }
 Expected Output: 7
 
 Test: "It should return 9 when bacon is put in the function"
 Code:
 else if (this.meat === "Bacon") {
-  return initialPrice(small) + 4
+  return initialPrice(small) + 4;
 }
 Expected Output: 9
 
 Test: "It should return initialPrice() when pepperoni or none is but in the function"
 Code:
-else (this.meat === "Pepperoni" || this.meat === "None") {
-  return initialPrice(small)
+else {
+  return initialPrice(small);
 }
 Expected Output: 5
 
