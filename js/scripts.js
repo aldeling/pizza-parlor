@@ -1,4 +1,5 @@
 // Business Logic
+
 function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
   this.size = size;
   this.crust = crust;
@@ -8,4 +9,12 @@ function Pizza(size, crust, cheese, meat, sauce, greens, extras) {
   this.greens = greens;
   this.extras = extras;
 }
+
 // UI Logic
+function handleFromSubmission(event) {
+  event.preventDefault();
+}
+
+window.addEventListener("load", function() {
+  this.document.querySelector("form#pizza").addEventListener("submit", handelFormSubmission);
+});
