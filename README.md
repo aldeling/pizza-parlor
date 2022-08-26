@@ -20,6 +20,7 @@
   * There are no known bugs
 
 ### Tests
+Describes: initialPrice()
 
 Test: "It should return 5 when small is put in the function"
 Code:
@@ -35,12 +36,19 @@ else if (this.size === "Medium") {
 }
 Expected Output: 10
 
-Test: "It should return 15 when medium is put in the function"
+Test: "It should return 15 when large is put in the function"
 Code:
 else if (this.size === "Large") {
   return "15"
 }
 Expected Output: 15
+
+Test: "It should return 20 when extra large is put in the function"
+Code:
+else if (this.size === "Extra Large") {
+  return "20"
+}
+Expected Output: 20
 
 ### License
   [GNU GPL3.0](https://choosealicense.com/licenses/gpl-3.0/) Copyright (c) 08/26/2022 Athea DeLing
