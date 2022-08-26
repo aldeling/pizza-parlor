@@ -73,9 +73,12 @@ else if (this.meat === "Bacon") {
 }
 Expected Output: 9
 
-Test:
+Test: "It should return initialPrice() when pepperoni or none is but in the function"
 Code:
-Expected Output:
+else (this.meat === "Pepperoni" || this.meat === "None") {
+  return initialPrice(small)
+}
+Expected Output: 5
 
 
 ### License
